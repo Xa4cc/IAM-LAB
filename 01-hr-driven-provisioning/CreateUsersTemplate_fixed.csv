@@ -1,0 +1,6 @@
+﻿Nombre [displayName] requerido,Nombre de usuario [userPrincipalName] requerido,Contraseña inicial [passwordProfile] requerida,Cuenta habilitada (true/false) [accountEnabled],Nombre [givenName],Apellidos [surname],Puesto [jobTitle],Departamento [department],Ubicación de uso [usageLocation],Dirección postal [streetAddress],Estado o provincia [state],País o región [country],Oficina [officeLocation],Ciudad [city],Código postal [postalCode],Teléfono de la empresa [businessPhones],Teléfono móvil [mobilePhone]
+Chris Green,chris@guemes1815.onmicrosoft.com,P@ssw0rd!,true,Chris,Green,IT Manager,IT,US,123 Main St,WA,United States,Building A,Seattle,98101,+1 555-0100,+1 555-0101
+Patricio Bellett,patricio@guemes1815.onmicrosoft.com,P@ssw0rd!,true,Patricio,Bellett,HR Manager,HR,,,,,,,,,
+Nadia Ferrand,Nadia@guemes1815.onmicrosoft.com,P@ssw0rd!,true,Nadia,Ferrand,Sales Manager,Sales,,,,,,,,,
+Morena Bellett,Morena@guemes1815.onmicrosoft.com,P@ssw0rd!,true,Morena,Bellett,Marketing Manager,Marketing,,,,,,,,,
+Matias Muti,Matias@guemes1815.onmicrosoft.com,P@ssw0rd!,true,Matias,Muti,Finance Manager,Finance,,,,,,,,,
