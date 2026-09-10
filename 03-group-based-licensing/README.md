@@ -23,16 +23,6 @@ Durante este módulo me encontré con que la licencia de grupo aparecía como "A
 5. La causa real: fui al perfil del usuario y en la pestaña **OneDrive** apareció el mensaje *"We can't show the OneDrive settings. If this is a new user, their OneDrive might not be set up yet."* — esto confirmó que el problema no era de configuración sino de **tiempo de aprovisionamiento del backend** de M365 (Exchange/OneDrive) en un tenant/trial recién activado.
 6. Con Microsoft Entra ID P2 (que no depende de aprovisionar buzón/OneDrive) la asignación vía grupo sí funcionó sin demoras, lo que confirmó que el mecanismo de group-based licensing en sí estaba funcionando correctamente — el retraso era específico de los servicios de M365 que necesitan infraestructura adicional.
 
-## Archivos en esta carpeta
-
-- `screenshots/licenses-assigned-group.png` — licencias tildadas en el grupo.
-- `screenshots/errors-issues-tab.png` — la pestaña de errores, sin incidencias reportadas.
-- `screenshots/onedrive-not-ready.png` — el mensaje que reveló la causa real del retraso.
-
-## Resultado
-
-![Licencias asignadas al grupo](screenshots/licenses-assigned-group.png)
-
 ## Aprendizajes
 
 - No todo lo que parece un error de configuración lo es — a veces es simplemente el backend del servicio todavía terminando de aprovisionar infraestructura, sobre todo en tenants/trials recién creados.
