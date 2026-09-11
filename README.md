@@ -21,7 +21,8 @@ Simular el flujo completo que usan las organizaciones reales para gestionar el a
 - `02-dynamic-groups/` — Reglas de membership dinámica por atributo `department`, validación de reglas.
 - `03-group-based-licensing/` — Asignación de licencias (Entra ID P2 y M365 Business Premium) a nivel grupo, incluyendo el proceso de troubleshooting real que tuve que hacer.
 - `04-lifecycle-workflows-leaver/` — Workflow de baja automática en tiempo real (real-time employee termination): remoción de grupos, remoción de Teams, eliminación de cuenta.
-
+- `05-powershell-automation` — Script de PowerShell y Microsoft Graph que automatiza la creación de usuarios desde un CSV, reemplazando el proceso manual del módulo 01
+- `06-conditional-access` — Conditional Access Policy que exige MFA a los usuarios del grupo SG-Finance, probada en modo Report-only antes de activarla.
 Cada carpeta tiene su propio README con capturas y explicación paso a paso.
 
 ## Qué practiqué
@@ -31,6 +32,8 @@ Cada carpeta tiene su propio README con capturas y explicación paso a paso.
 - **Group-based licensing**: asignación de licencias de Entra ID P2 y M365 Business Premium a nivel grupo, en vez de usuario por usuario.
 - **Lifecycle Workflows**: automatización del proceso de "Leaver" (baja de empleado) con tareas predefinidas de Microsoft Entra ID Governance.
 - **Troubleshooting real de licenciamiento**: diagnostiqué por qué una licencia de grupo no se propagaba a los usuarios, descartando causas (usage location, group ownership, tipo de grupo) hasta llegar a la causa real: el backend de Exchange/OneDrive todavía no había terminado de aprovisionar la infraestructura para un tenant/trial recién creado.
+- **Automatizacion con Powershell para bulk creation de usarios**: reemplacé el bulk-create manual por un script que crea usuarios desde un CSV usando el SDK de Microsoft Graph, con manejo de errores y chequeo de duplicados.
+- **Conditional Access**: policy que exige MFA a un grupo específico, probada primero en modo Report-only antes de activarla, para validar el impacto sin arriesgar bloquear usuarios reales.
 
 ## Herramientas y licencias usadas
 
